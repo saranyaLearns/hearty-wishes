@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(8, 73, 114);
+    font-family: Poppins;
+}
+.container{
+    height: 400px;
+    width: 240px;
+    background-color: #b2bec3;
+    border: 3px solid rgb(8, 73, 114);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    opacity: 0;
+    z-index: 1;
+    box-shadow: rgba(221, 103, 200, 0.507) 0px 0px 105px 28px, rgba(123, 103, 206, 0.22) 0px 10px 105px 10px;
+}
+.register{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid blueviolet;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(204, 94, 248, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(133, 69, 236, 0.9);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.register input,button{
+    height: 30px;
+    width: 160px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+#myText{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 20%, #1793FF 50%, #CF2EC4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid rgb(8, 73, 114);
+}
+#btn{
+  
+    background-color: rgb(8, 73, 114);
+    color: white;
+    font-weight: 100;
+}
+#btn:hover{
+    background-color: rgba(137, 25, 182, 0.9);
+}
+.caption{
+    background-color: #dfe6e9;
+    border-radius: 10px 10px 0px 0px;
+    height: 180px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+#curve{
+    fill: transparent;
+}
+.text{
+    fill:rgb(8, 73, 114); 
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+.lamp-deep{
+    background-color: #dfe6e9;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+#result{
+    padding-top: 8px;
+    font-size: 20px;
+    font-family: "Sofia";
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #1793FF 50%, #CF2EC4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.greetings{
+    margin-bottom: 5px;
+    background-color:  rgb(8, 73, 114);;
+    width: 200px;
+    padding: 0px 20px; 
+}
+.greetings span {
+    font-size: 16px;
+    padding-right: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    animation: zoomup 2s linear infinite;
+    animation-delay: calc(200ms * var(--i));
+  }
+  
+  @keyframes zoomup {
+    0%,
+    100% {
+      color: #00c2ba;
+      filter: blur(1px);
+      text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
+        0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
+        0 0 120px #00c2ba;
+    }
+  
+    5%,
+    95% {
+      filter: blur(0);
+      color: #fff;
+      text-shadow: none;
+    }
+  }
+.triangle{
+    height: 80px;
+    width: 30px;
+    background: linear-gradient(-45deg, #ee7752, #c72115);
+    border-radius: 50%;
+    position: absolute;
+    top: -18%;
+    left: 43%;
+    animation: fire 1s ease infinite;
+}
+@keyframes fire {
+	0% {
+        background-image: linear-gradient(to right, #d63031 , orangeRed);
+	}
+	50% {
+        background-image: linear-gradient(to left, red , orange);
+	}
+	100% {
+        background-image: linear-gradient(to right, #d63031 , orangeRed);
+	}
+}
+
+.semi-circle{
+    height: 80px;
+    width: 150px;
+    background-color: #B43201;
+    position: absolute;
+    border-radius: 0px 0px 150px 150px;
+    position: relative;
+    
+}
+.semi-circle::before{
+    content: " ";
+    height: 20px;
+    width: 75px;
+    background-color: #F6931C;
+    border-radius: 50%;
+    position: absolute;
+    top: -14%;
+
+}
+.semi-circle::after{
+    content: " ";
+    height: 20px;
+    width: 75px;
+    background-color:#F6931C;
+    border-radius: 50%;
+    position: absolute;
+    top: -14%;
+    margin-left: 74px;
+}

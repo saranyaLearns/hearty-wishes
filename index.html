@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Poppins">
+</head>
+<body>
+    <div class="register">
+        <input type="text" id="myText" placeholder="Your Name Here...">
+        <button id="btn">Level up your celebration</button> 
+    </div>
+
+
+    <div class="container">
+        <div class="caption">
+            <div class="greetings">
+                <span style="--i:1">G</span>
+                <span style="--i:2">R</span>
+                <span style="--i:3">E</span>
+                <span style="--i:4">E</span>
+                <span style="--i:5">T</span>
+                <span style="--i:6">I</span>
+                <span style="--i:7">N</span>
+                <span style="--i:8">G</span>
+                <span style="--i:9">S</span>
+              </div>
+
+            <svg width="200" height="130">
+                <path id="curve" d="M 0 120 C 0 100, 120 0,200 120">
+                </path>
+                <text class="text" text-anchor="middle">
+                    <textPath class="text__path" href="#curve" startOffset="50%" id="greeting">
+                        Happy Diwali
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="lamp-deep">
+            <div class="triangle"></div>
+            <div class="semi-circle"></div>
+            <h2 id="result"></h2> 
+        </div>      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
